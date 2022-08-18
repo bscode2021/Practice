@@ -15,7 +15,7 @@ nav {
 }
 
 .navbarList li a {
-    margin: 0 1rem ;
+    margin: 0 1rem;
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -90,17 +90,18 @@ main {
     font-weight: bolder;
     color: black;
 }
+
 /* card css end */
 
 /* footer start */
 
-.myContainer {  
+.myContainer {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 0px 20px;
     grid-auto-flow: row;
     padding: 4em 6em;
-  }
+}
 
 .info {
     margin: auto;
@@ -120,7 +121,7 @@ main {
     margin: 0 10px;
 }
 
-.footerList ul{
+.footerList ul {
     list-style-type: none;
     width: fit-content;
     margin: 0 auto;
@@ -149,26 +150,26 @@ main {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .myContainer {  
+    .myContainer {
         grid-template-columns: 1fr 1fr;
         row-gap: 40px;
-      }
+    }
 
-      .info {
+    .info {
         text-align: center;
     }
+
     .info blockquote {
         width: 100%;
     }
-  }
+}
 
-  @media only screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
     .parent {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .myContainer {  
+    .myContainer {
         grid-template-columns: 1fr;
-      }
-  }
-
+    }
+}
