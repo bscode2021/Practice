@@ -59,6 +59,7 @@ main {
     grid-row-gap: 40px;
     padding: 50px 70px;
 }
+
 .parent a {
     text-decoration: none;
 }
@@ -98,10 +99,11 @@ main {
     grid-template-columns: 2fr 1fr 1fr 1fr;
     gap: 0px 20px;
     grid-auto-flow: row;
+    padding: 4em 6em;
   }
 
-.myContainer > div {
-    padding: 2em 3em;
+.info {
+    margin: auto;
 }
 
 .info blockquote {
@@ -118,4 +120,55 @@ main {
     margin: 0 10px;
 }
 
+.footerList ul{
+    list-style-type: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.footerList ul .listHeader {
+    color: gray;
+    margin-bottom: 4vh;
+}
+
+.footerList ul li {
+    margin-bottom: 2vh;
+}
+
+.footerList ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
 /* footer end */
+
+/* tablet view */
+@media only screen and (max-width: 960px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .myContainer {  
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+      }
+
+      .info {
+        text-align: center;
+    }
+    .info blockquote {
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+    .parent {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .myContainer {  
+        grid-template-columns: 1fr;
+      }
+  }
+
