@@ -32,6 +32,7 @@ nav {
 
 main {
     background-color: lightGray;
+    min-height: 90vh;
 }
 
 #title {
@@ -67,6 +68,7 @@ main {
 .parent .myCard {
     min-height: 200px;
     width: 100%;
+    cursor: pointer;
 }
 
 .parent .myCard:hover {
@@ -143,6 +145,57 @@ main {
 }
 
 /* footer end */
+
+/* modal start */
+
+.myModal {
+    width: 40%;
+    min-height: 60vh;
+    position: fixed;
+    top: 15vh;
+    left: 30%;
+    background-color: white;
+    border-radius: 15px;
+    display: none;
+}
+
+.myModal img {
+    width: 100%;
+}
+
+.myModal h2 {
+    text-align: center;
+    margin: 0.5em 0;
+}
+
+.myModal span {
+    display: inline-block;
+    margin: 0.5em 10%;
+    color: orangered;
+}
+
+.myModal p {
+   text-align: justify;
+   width: 80%;
+   margin: 0.5em auto;
+}
+
+.myModal button {
+    display: block;
+    width: 30%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border-color: blue;
+    background-color: transparent;
+    margin: 1em auto;
+ }
+
+ .myModal button:hover {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+ }
+/* modal end */
 
 /* tablet view */
 @media only screen and (max-width: 960px) {
