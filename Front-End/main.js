@@ -37,5 +37,18 @@ $(document).ready(function () {
             myP.style.display = "none";
         }
     });
+
+    $.ajax(
+        {
+            url: 'resources/myText.txt',
+            success: function (result) {
+                console.log(result);
+                $("#funAjax").html(result);
+            },
+            error: function (ex) {
+                console.log("sorry the data cannot be reached!");
+            }
+        }
+    );
 });
 
