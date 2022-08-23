@@ -24,5 +24,18 @@
 //     }
 // }, false);
 
+$(document).ready(function () {
+    $("p")[0].style.display = "none";
 
+    $("#showText").click(function () {
+        let paragraphs = $("p");
+        let myP = paragraphs[0];
+
+        if (myP.style.display == "none") {
+            myP.style.display = "block";
+        } else {
+            myP.style.display = "none";
+        }
+    });
+});
 
