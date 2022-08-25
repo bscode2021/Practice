@@ -43,7 +43,7 @@ $(document).ready(function () {
             url: 'resources/myText.txt',
             success: function (result) {
                 console.log(result);
-                $("#funAjax").html(result);
+                $("#funAjax").html(htmlText);
             },
             error: function (ex) {
                 console.log("sorry the data cannot be reached!");
@@ -51,4 +51,3 @@ $(document).ready(function () {
         }
     );
 });
-
